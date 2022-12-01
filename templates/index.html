@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<body>
+    <h1> Rate your movie</h1>
+    <form action="{{login_post_path}}" id="login-form" method="post" enctype="multipart/form-data">
+        <label for="movie-name"> Pick a movie:</label>
+        <select id="movie-name" name="Movies">
+            {input}
+            </select>
+        <label for="rating"> Choose your rating</label>
+        <select id = "rating" name="Ratings">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </select>
+
+        <input id="get-movies" type="submit" value="Submit">
+    </form>
+
+    <hr>
+
+    <div id="Best-10"> Top 10 movies to watch:
+    </div>
+    <div id="best-genre">Best in {{input4}}</div>
+
+</body>
